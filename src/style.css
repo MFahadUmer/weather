@@ -56,10 +56,15 @@
   display: none;
   border-radius: 25px;
   text-align: center;
-  width: 560px;
+  width: 800px;
   border: white solid 2px;
-  background: aquamarine;
+  background-size: cover;
   z-index: 1;
+}
+
+
+.temperatureDetailsBG {
+  position: relative;
 }
 
 .weatherDetails {
