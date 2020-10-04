@@ -1,6 +1,6 @@
-const navbar = (() =>{
+const navbar = (() => {
   const navbarSection = document.createElement('div');
-  navbarSection.setAttribute('class', 'height-75 px-4 d-flex')
+  navbarSection.setAttribute('class', 'height-75 px-4 d-flex');
   navbarSection.innerHTML = `
   <div class=" d-flex justify-content-between align-items-center w-100">
         <div class=" h4 text-white d-flex align-items-center"><a href="#"><h4 class="text-white">Today's Weather</h4></a></div>
