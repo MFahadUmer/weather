@@ -17,7 +17,7 @@ This was achieved through use of async and await to retrieve information. The ba
 
 ## Live version
 
-Heres a live <a href="#">link</a>
+Heres a live <a href="https://rawcdn.githack.com/MFahadUmer/weather/da7e014b10a375061d37e78fd29c42d512743b79/dist/index.html">link</a>
 
 ## Features
 
