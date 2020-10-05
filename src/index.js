@@ -13,7 +13,7 @@ function weatherDetails(search) {
       const temperatureDetailsBG = document.getElementById('temperatureDetailsBG');
       temp.style.display = 'block';
       const giphy = gihpyApi.giphyJson(`${data.weather[0].main} weather`);
-      const giphyRecord = giphy.then((data) => {
+      const giphyRecord = giphy.then(data => {
         temp.style.backgroundImage = `url(${data.data.images.downsized.url})`;
       });
       temp.innerHTML = `
@@ -63,7 +63,7 @@ function weatherDetails(search) {
 const body = document.getElementById('body');
 body.setAttribute('onload', weatherDetails('mailsi'));
 
-searchForm.onsubmit = (e) => {
+searchForm.onsubmit = e => {
   e.preventDefault();
   const search = document.getElementById('searchInputField').value;
   weatherDetails(search);
