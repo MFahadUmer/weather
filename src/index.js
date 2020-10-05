@@ -5,9 +5,7 @@ import weatherApi from './weatherApi';
 import gihpyApi from './giphyApi';
 import weatherBG from './weatherImage.jpg';
 
-searchForm.onsubmit = (e) => {
-  e.preventDefault();
-  const search = document.getElementById('searchInputField').value;
+function weatherDetails(search) {
   const a = weatherApi.weatherJson(search);
   const record = a.then(data => {
     if (data.cod === 200) {
@@ -60,6 +58,15 @@ searchForm.onsubmit = (e) => {
       document.getElementById('convertToCelcius').style.display = 'none';
     });
   });
+}
+
+const body = document.getElementById('body');
+body.setAttribute('onload', weatherDetails('mailsi'));
+
+searchForm.onsubmit = (e) => {
+  e.preventDefault();
+  const search = document.getElementById('searchInputField').value;
+  weatherDetails(search);
 };
 document.getElementById('weatherImg').setAttribute('src', weatherBG);
 /* eslint-enable no-unused-vars, no-undef, no-mixed-operators */
