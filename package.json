@@ -4,10 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "watch": "webpack --watch",
-    "dev": "webpack --mode development",
+    "build": "webpack",
     "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
@@ -26,7 +23,8 @@
     "file-loader": "^6.1.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "lodash": "^4.17.20"

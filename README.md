@@ -21,12 +21,12 @@ Heres a live <a href="https://rawcdn.githack.com/MFahadUmer/weather/da7e014b10a3
 
 ## Features
 
-In this project, the following features were done;
+In this project, the following features are done;
 
 ### Functionalities added
 - Search for city to get weather information.
-- Convert temperatur to farenheight
-- Convert temperatur to celcius
+- Convert temperature to fahrenheit
+- Convert temperature to celsius
 
 ## Built with
 
@@ -43,6 +43,11 @@ In this project, the following features were done;
 ## How to install
 
 Starting out with todolist is easy, git clone the project and open from vscode. Run npm install and open index from chrome. That's it.
+
+``` Clone The Repo ```<br>
+``` RUN npm install ```<br>
+``` RUN npm run build ```<br>
+``` RUN npm run start ```<br>
 
 ## Authors
 
